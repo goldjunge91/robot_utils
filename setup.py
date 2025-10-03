@@ -41,11 +41,14 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="Husarion",
-    maintainer_email="support@husarion.com",
+    maintainer="goldjunge91",
+    maintainer_email="support@example.com",
     description="Utilities for robot Series",
     license="Apache License 2.0",
-    tests_require=["pytest"],
+    # tests_require=["pytest"],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         "console_scripts": ["flash_firmware = robot_utils.flash_firmware:main"],
     },
